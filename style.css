@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy", Arial, sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    min-height: 100vh; 
+}
+#top{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://media.istockphoto.com/id/495114504/photo/winter-snowy-landscape.webp?a=1&b=1&s=612x612&w=0&k=20&c=eruLqwFZI2Vku9wNMFNnTD3-_uuBhXyF9CKG6McBJkU=);
+    background-size: cover;
+    background-position:50% 60% ;
+}
+#overlay{
+    width: 100%;
+    min-height: inherit;
+    position: relative;
+}
+#text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 7%;
+    padding: 0 10vw;
+    color: black;
+}
+
+#text h1{
+    font-size: 5vw;
+    font-weight: 500;   
+}
+
+#text-right{
+    width: 60%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#text-right p{
+    width: 40%;
+    font-size: 12px;
+}
+#icons{
+    color: black;
+    transition: color 0.3s ease;
+
+}
+
+#icons i:hover {
+    color: #0077b5;
+}
+#bottom{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    min-height: 40vh;
+    /* background-color: blue; */
+    justify-content: space-around;
+    align-items: center;
+}
+#bone, #btwo, #bthree, #bfour {
+    flex: 1; 
+    min-width: 250px; 
+    min-height: 40vh;
+    /* margin: 10px; */
+}
+
+#bone{
+    background-color: rgb(196, 194, 194);
+    padding: 30px;
+}
+#bone P{
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+#btwo{
+   background-image: url(https://images.unsplash.com/photo-1649564841092-94dc19a6cf3b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG9yYW5nZSUyMHBhcmFjaHV0ZXxlbnwwfHwwfHx8MA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+#bthree{
+    
+    display: flex;
+    flex-direction: column;
+}
+#bthreetop{
+    min-height: 20vh;
+    flex:1;
+    background-image: url(https://images.unsplash.com/photo-1532009877282-3340270e0529?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YWJvdXQlMjBtb3VudGFpbnN8ZW58MHx8MHx8fDA%3D);
+    background-position:center;
+    background-size: cover;
+}
+#bthreebottom{
+    min-height: 20vh;
+    background-image: url(https://plus.unsplash.com/premium_photo-1676478746990-4ef5c8ef234a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Zmxvd2Vyc3xlbnwwfHwwfHx8MA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#bfour{
+    background-color:rgb(105, 102, 102);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px; */
+    justify-content: space-between;
+}
+#bfour h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px; 
+    text-align: center; 
+    border-bottom: 2px solid #333; 
+    padding-bottom: 10px; 
+}
+
+#profile {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+}
+
+#avatar {
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%; 
+    overflow: hidden; 
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+  #avatar img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+.details {
+    flex: 1; 
+}
+
+.details .title {
+    font-size: 1rem; 
+    font-weight: bold;
+    color: #f2f2f2; 
+}
+
+.details .date {
+    font-size: 0.9rem; 
+    color: #888; 
+    margin-top: 5px;
+}
+
+.details .title2 {
+    font-size: 1rem; 
+    font-weight: bold;
+    margin-left: 40px;
+    color: #f2f2f2; 
+}
+.details .date2 {
+    font-size: 0.9rem; 
+    color: #888; 
+    margin: 5px 40px;
+}
+#avatar2 {
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%; 
+    overflow: hidden; 
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    
+}
+
+  #avatar2 img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+}
+/* 
+@media (max-width: 500px) {
+    #overlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #overlay #text #text-right{
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    #overlay #text #text-right p{
+        width: initial;
+        margin-top: 20px;
+    }
+    #overlay #text #text-right icons{
+        margin-top: 30px;
+    }
+    #text h1{
+        font-size: 10vw;
+    }
+    #bottom{
+        flex-direction: column;
+    }
+    #bone{
+        width: 100%;
+    }
+    #btwo{
+        width: 100%;
+    }
+    #bthree{
+        flex-direction: column;
+        width: 100%;
+    }
+    #bfour{
+        width: 100%;
+    }
+} */
+
+
+@media (max-width: 500px) {
+    html, body {
+        font-size: 14px; /* Reduce the base font size for smaller screens */
+    }
+
+    #text h1 {
+        font-size: 4vw; /* Adjust the heading size */
+    }
+
+    #text {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align items to the left */
+        padding: 0 5vw; /* Reduce padding */
+    }
+
+    #text-right {
+        flex-direction: column; /* Stack text blocks */
+        width: 100%; /* Use full width */
+        margin-top: 10px; /* Add spacing */
+    }
+
+    #text-right p {
+        width: 100%; /* Allow paragraphs to span full width */
+        font-size: 10px; /* Reduce font size for readability */
+    }
+
+    #bottom {
+        flex-direction: column; /* Stack all sections vertically */
+        min-height: auto; /* Allow flexible height */
+    }
+
+    #bone, #btwo, #bthree, #bfour {
+        min-width: 90%; /* Reduce section width for better fit */
+        margin: 10px auto; /* Center sections */
+    }
+
+    #bthreetop, #bthreebottom {
+        height: 150px; /* Set a fixed height for images */
+        border-radius: 5px; /* Add rounded corners */
+    }
+
+    #bfour h3 {
+        font-size: 1.2rem; /* Adjust heading size */
+    }
+
+    #profile {
+        flex-direction: column; /* Stack profile elements */
+        align-items: flex-start; /* Align to the left */
+    }
+
+    #avatar, #avatar2 {
+        width: 40px;
+        height: 40px; /* Adjust avatar size */
+    }
+
+    .details {
+        width: 100%; /* Use full width for details */
+        text-align: left; /* Align text to the left */
+    }
+
+    #overlay {
+        padding: 20px; /* Add padding to keep content aligned */
+    }
+
+    #icons {
+        font-size: 1rem; /* Resize icons for better visibility */
+    }
+
+    #icons i:hover {
+        color: #0077b5; /* Keep hover effect */
+    }
+}
